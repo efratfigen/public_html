@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<spetml:page templateName="mainPage" title="Customer Support" xmlns:spetml="http://www.spetnik.com/2013/spetml">
+	
+	<sl:description xmlns:sl="http://example.com/solarlogistix">
+		Solar support requests for existing customers.
+	</sl:description>
+
+	<sl:topWidget name="banner" xmlns:sl="http://example.com/solarlogistix" />
+
+	<sl:mainFrame xmlns:sl="http://example.com/solarlogistix">
+		<section>
+			<h3>Need <span class="line2">Help?</span></h3>
+			<p class="indent">
+				Existing customers: Use the form below to submit any requests regarding your Solar Logistix products.
+				All other requests, please use our <a href="/company-contact">general contact form</a>.
+			</p>
+			<div id="dvMessage" />
+			<form action="docontact" method="POST" class="contact support">
+				<label>
+					<div class="text">Full Name:</div>
+					<input name="name" class="required" />
+				</label>
+				<label>
+					<div class="text">Company Name:</div>
+					<input name="company" class="required" />
+				</label>
+				<label>
+					<div class="text">Telephone Number:</div>
+					<input type="tel" name="phone" />
+				</label>
+				<label>
+					<div class="text">Email Address:</div>
+					<input type="email" name="email" />
+				</label>
+				<label>
+					<div class="text">Request Details:</div>
+					<textarea name="details" class="required" />
+				</label>
+
+				<button class="action arrow-right" type="submit">
+					Submit Request
+				</button>
+				<div class="clear" />
+			</form>
+			<div class="clear" />
+		</section>
+	</sl:mainFrame>
+
+	<spetml:post>
+		<spetml:actions>
+			<spetml:action default="true" name="sendmail" type="module" moduleName="modCore" functionName="sendEmail">
+				<spetml:params>
+					<spetml:param name="subject" value="Support Request from ">
+						<spetml:value type="field" name="name" />
+					</spetml:param>
+					<spetml:param name="recipients">
+						<spetml:value type="text" text="support@example.com" />
+					</spetml:param>
+					<spetml:param name="message" value="The following support request has been received from Solar Logistix:" />
+					<spetml:param name="fromAddress" value="Solar Logistix &lt;no-reply@solarlogistix.com&gt;" />
+					<spetml:param name="replyTo" fieldName="email" />
+					<spetml:param name="field" fieldName="name" title="Full Name: " dataType="string" />
+					<spetml:param name="field" fieldName="company" title="Company Name: " dataType="string" />
+					<spetml:param name="field" fieldName="phone" title="Telephone Number: " dataType="string" />
+					<spetml:param name="field" fieldName="email" title="Email Address: " dataType="string" />
+					<spetml:param name="field" fieldName="comments" title="Questions or Comments: " dataType="string" />
+				</spetml:params>
+				<spetml:output rootName="sendEmail" nodeName="result">
+					<spetml:field type="attribute" name="fail" />
+				</spetml:output>
+				<spetml:rights />
+			</spetml:action>
+		</spetml:actions>
+	</spetml:post>
+</spetml:page>

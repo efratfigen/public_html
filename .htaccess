@@ -1,0 +1,19 @@
+#<Directory ~/public_html>
+  Options Indexes FollowSymLinks MultiViews
+  Order allow,deny
+  Allow from all
+  RewriteEngine on
+  RewriteBase /
+  RewriteRule ^files/.*$ - [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^([0-9a-zA-Z_.\-]+)$ /$1/ [R,L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !startpage.php
+  RewriteRule ^([0-9a-zA-Z_.\-]*)/?([0-9a-zA-Z_.\-/]*)$ /php/startpage.php?pagename=$1&other=$2&extra=$3 [L,QSA]
+#</Directory>
+
+ErrorDocument 404 /_404
+
+#<Directory ~/public_html/files>
+#  AllowOverride None
+#  php_flag engine off
+#</Directory>

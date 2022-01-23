@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<spetml:page templateName="mainPage" title="Solar Products" xmlns:spetml="http://www.spetnik.com/2013/spetml">
+
+	<sl:description xmlns:sl="http://example.com/solarlogistix">
+		Solar panels, solar mass, and solar wafers are just some of the products we offer
+	</sl:description>
+
+	<sl:topWidget name="banner" xmlns:sl="http://example.com/solarlogistix" />
+
+	<sl:mainFrame xmlns:sl="http://example.com/solarlogistix">
+		<h3>Large range of<br/><span class="line2">Solar Products</span></h3>
+		<p>
+			Here at <a href="/">Solar Logistix</a>, we go beyond power. Our exclusive
+			solar products allow you to experience the Sun here on Earth.
+		</p>
+
+		<h4>PURESOLAR&#8482; Panels</h4>
+		<p class="indent">
+			<img class="left" alt="Solar Panels" src="/files/images/imgpanels.jpg" />
+			PURESOLAR&#8482; Panels are our patented, environmentally-friendly solar
+			grid panels. Made from the talons of spotted owls, the panel frames are
+			rigid and can survive even the closest contact with the sun.<br /><br />
+			We believe that things from space should be installed by people from space.
+			Therefore every <a href="/">Solar Logistix</a> installation is performed
+			by an actual NASA astronaut.
+			<br /><br/>
+			<a href="/company-contact/quote">Click here</a> to get started with your
+			own solar panels today.
+		</p>
+		<div class="clear" />
+
+		<h4>Solar Mass</h4>
+		<p class="indent">
+			<img class="left" alt="Solar Mass" src="/files/images/imgsolarmass.jpg" />
+			Solar mass is no longer just for physicists and astronomers. Now you can
+			receive your own glob of smoldering solar mass just for yourself. Hotter than
+			lava, we mine our solar mass up close from the base of coronal mass ejections.
+			<br /><br/>
+			<a href="/company-contact/quote">Click here</a> to find out how you can
+			purchase solar mass for your home or business.
+		</p>
+		<div class="clear" />
+
+		<h4>Solar Wafers</h4>
+		<p class="indent">
+			<img class="left" alt="Solar Wafers" src="/files/images/imgwafer.jpg" />
+			Need a hot meal? Nothing is hotter than our solar wafers. These wafers are
+			made from fused hydrogen taken from the sun's core, sliced thin, and layered
+			with a rich cream filling. Lighter than air, these wafers will have you floating
+			on a ray of sunshine.
+			<br /><br/>
+			<a href="/company-contact/quote">Click here</a> for pricing and more information.
+		</p>
+		<div class="clear" />
+	</sl:mainFrame>
+</spetml:page>

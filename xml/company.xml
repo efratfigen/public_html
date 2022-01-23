@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<spetml:page templateName="mainPage" title="About Solar Logistix" xmlns:spetml="http://www.spetnik.com/2013/spetml">
+
+	<sl:description xmlns:sl="http://example.com/solarlogistix">
+		Solar Logistix has been providing solar services for over six weeks. With dozens of satisfied customers, our goal is to elevate our service and to shine above the competition.
+	</sl:description>
+
+	<sl:topWidget name="banner" xmlns:sl="http://example.com/solarlogistix" />
+
+	<sl:mainFrame xmlns:sl="http://example.com/solarlogistix">
+		<section>
+			<h3>About <span class="line2">Us</span></h3>
+			<p class="indent">
+				<img class="left" alt="" src="/files/images/imgcompany.jpg" />
+				Solar Logistix has been providing solar services for over six weeks.
+				With dozens of satisfied customers, our goal is to elevate our service
+				and to shine above the competition.
+			</p>
+			<p class="indent">
+				We are based in East Hampshire. <a href="/company-contact">Click here to contact us</a> with any questions you may have.
+			</p>
+			<div class="clear" />
+		</section>
+
+		<section>
+			<h3 class="">Employment <span class="line2">Opportunities</span></h3>
+			<p class="indent">
+				Solar Logistix is currently looking to expand its sales staff. We are also looking for skilled astronauts who are willing to travel to the sun.
+				<a href="/company-contact">Click here to contact us</a> for more information.
+			</p>
+			<div class="clear" />
+		</section>
+	</sl:mainFrame>
+</spetml:page>

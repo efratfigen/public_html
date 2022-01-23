@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<spetml:page templateName="mainPage" title="Contact Us" xmlns:spetml="http://www.spetnik.com/2013/spetml">
+
+	<sl:description xmlns:sl="http://example.com/solarlogistix">
+		Contact us to find out how we can give you more sunlight for your money.
+	</sl:description>
+
+	<sl:topWidget name="banner" xmlns:sl="http://example.com/solarlogistix" />
+
+	<sl:mainFrame xmlns:sl="http://example.com/solarlogistix">
+		<section>
+			<h3>Get In <span class="line2">touch</span></h3>
+			<p class="indent">
+				We would be happy to speak with you to discuss your solar needs. Please fill out the form below and a representative will
+				respond shortly.
+			</p>
+			<div id="dvMessage" />
+			<form action="docontact" method="POST" class="contact general">
+				<label>
+					<div class="text">Full Name:</div>
+					<input name="name" class="required" />
+				</label>
+				<label>
+					<div class="text">Company Name:</div>
+					<input name="company" />
+				</label>
+				<label>
+					<div class="text">Telephone Number:</div>
+					<input type="tel" name="phone" />
+				</label>
+				<label>
+					<div class="text">Email Address:</div>
+					<input type="email" name="email" />
+				</label>
+				<label>
+					<div class="text">Questions or Comments:</div>
+					<textarea name="comments" class="required" />
+				</label>
+
+				<button class="action arrow-right" type="submit">
+					Submit Request
+				</button>
+				<div class="clear" />
+			</form>
+		</section>
+	</sl:mainFrame>
+
+	<spetml:post>
+		<spetml:actions>
+			<spetml:action default="true" name="sendmail" type="module" moduleName="modCore" functionName="sendEmail">
+				<spetml:params>
+					<spetml:param name="subject" value="Contact Request from ">
+						<spetml:value type="field" name="name" />
+					</spetml:param>
+					<spetml:param name="recipients">
+						<spetml:value type="text" text="contact@example.com" />
+					</spetml:param>
+					<spetml:param name="message" value="The following contact request has been received from Solar Logistix:" />
+					<spetml:param name="fromAddress" value="Solar Logistix &lt;no-reply@solarlogistix.com&gt;" />
+					<spetml:param name="replyTo" fieldName="email" />
+					<spetml:param name="field" fieldName="name" title="Full Name: " dataType="string" />
+					<spetml:param name="field" fieldName="company" title="Company Name: " dataType="string" />
+					<spetml:param name="field" fieldName="phone" title="Telephone Number: " dataType="string" />
+					<spetml:param name="field" fieldName="email" title="Email Address: " dataType="string" />
+					<spetml:param name="field" fieldName="comments" title="Questions or Comments: " dataType="string" />
+				</spetml:params>
+				<spetml:output rootName="sendEmail" nodeName="result">
+					<spetml:field type="attribute" name="fail" />
+				</spetml:output>
+				<spetml:rights />
+			</spetml:action>
+		</spetml:actions>
+	</spetml:post>
+</spetml:page>

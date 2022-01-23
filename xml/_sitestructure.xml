@@ -1,0 +1,51 @@
+<spetml:site xmlns:spetml="http://www.spetnik.com/2013/spetml">
+	<spetml:topNavigation>
+		<spetml:page name="home" navBar="true">HOME</spetml:page>
+		<spetml:page name="products" navBar="true">Products</spetml:page>
+		<spetml:page name="services" navBar="true">Services</spetml:page>
+		<spetml:page name="company" navBar="true">About Us</spetml:page>
+		<spetml:page name="company-contact" navBar="true">Contact Us</spetml:page>
+		<spetml:page name="company-support" navBar="true">Support</spetml:page>
+	</spetml:topNavigation>
+	<spetml:structure>
+		<spetml:page name="home" title="Home">
+			<spetml:page name="products" title="Products" />
+			<spetml:page name="services" title="Services" />
+			<spetml:page name="company" title="About Us" sideNav="true">
+				<spetml:page name="company-contact" title="Contact Us" />
+				<spetml:page name="company-support" title="Support" />
+			</spetml:page>
+			<spetml:page name="_404" title="Page Not Found" />
+			<spetml:page name="sms" title="SMS" />
+		</spetml:page>
+	</spetml:structure>
+	<sl:testimonials xmlns:sl="http://example.com/solarlogistix">
+		<sl:testimonial>
+			<sl:quote>
+				Solar Logistix has enabled us to view the sun in a whole new light!
+			</sl:quote>
+			<sl:author>
+				Joe Kurr, CEO
+			</sl:author>
+			<sl:company>
+				Punnin Tended, Inc.
+			</sl:company>
+		</sl:testimonial>
+		<sl:testimonial>
+			<sl:quote>
+				We never imagined that we would care so much about the sun. But now we can't get enough of it!
+			</sl:quote>
+			<sl:author>
+				Loe Shunman, SPF
+			</sl:author>
+			<sl:company>
+				American Sunscreen Corporation
+			</sl:company>
+		</sl:testimonial>
+	</sl:testimonials>
+	<spetml:modules>
+		<!--module name="modsecurity">
+			<function name="getLoginInfo" id="1" />
+		</module-->
+	</spetml:modules>
+</spetml:site>

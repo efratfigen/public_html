@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<spetml:page templateName="mainPage" title="Our Services" xmlns:spetml="http://www.spetnik.com/2013/spetml">
+
+	<sl:description xmlns:sl="http://example.com/solarlogistix">
+		High-bandwidth clean power and other solar solutions
+	</sl:description>
+
+	<sl:topWidget name="banner" xmlns:sl="http://example.com/solarlogistix" />
+
+	<sl:mainFrame xmlns:sl="http://example.com/solarlogistix">
+		<h3>Clean Power and Other<br/><span class="line2">Solar Services</span></h3>
+		<p>
+			Whatever it is that your business needs on the web, we have a solution for you.
+		</p>
+
+		<h4>Solar Power Collection</h4>
+		<p class="indent">
+			<img class="left" alt="Solar Panels" src="/files/images/imgprobe.jpg" />
+			<a href="/">Solar Logistix</a> is the only company that actually mines
+			power directly from the surface of the sun. This means raw power, with
+			no atmospheric scattering or cooling, delivered directly to your solar
+			panels. No more waiting for the sun to come out. With <a href="/">Solar Logistix</a>,
+			the sun is always shining.
+			<br /><br/>
+			<a href="/company-contact/quote">Click here</a> to get a quote on solar powering
+			your home or business.
+		</p>
+		<div class="clear" />
+
+		<h4>Alternative Light</h4>
+		<p class="indent">
+			<img class="left" alt="No more lightbulbs" src="/files/images/imglightbulb.jpg" />
+			Now you can go ahead and break every light bulb in your home or business.
+			When you subscribe to <a href="/">Solar Logistix</a>'s Alternative light&#8482;
+			service, you will receive your light directly through your solar panels -
+			straight from the sun. Live in an area that has clouds? Our Rainy Day Add-on
+			Package will give you light even at the darkest of times.
+			<br /><br/>
+			<a href="/company-contact/quote">Click here</a> to get started now!
+		</p>
+		<div class="clear" />
+
+		<h4>Solar Transport</h4>
+		<p class="indent">
+			<img class="left" alt="Solar transport" src="/files/images/imgrocket.jpg" />
+			<a href="/">Solar Logistix</a> has high-tech spacecraft visiting the Sun
+			frequently. Not only do we retrieve power from the sun, but we also refuel
+			it when it is running low (e.g. in the winter). Our spacecraft carry thousands
+			of gallons of molten lava from active volcanoes and, after refining it in space-borne
+			centrifuges, deliver it directly to loading docks on the solar surface.
+			<br /><br/>
+			Want to visit the Sun? Our space tourism division can help you arrange a
+			private trip for your family or co-workers.
+			<br /><br/>
+			<a href="/company-contact/quote">Click here</a> for pricing and more information.
+		</p>
+		<div class="clear" />
+	</sl:mainFrame>
+</spetml:page>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<spetml:page templateName="mainPage" title="404 - Page Not Found" xmlns:spetml="http://www.spetnik.com/2013/spetml">
+
+	<sl:title xmlns:sl="http://example.com/solarlogistix">404 - Page Not Found</sl:title>
+	<sl:description xmlns:sl="http://example.com/solarlogistix">
+		This page could not be found.
+	</sl:description>
+
+	<sl:breadcrumb link="none" xmlns:sl="http://example.com/solarlogistix" />
+
+	<sl:topWidget name="banner" xmlns:sl="http://example.com/solarlogistix" />
+
+	<sl:mainFrame xmlns:sl="http://example.com/solarlogistix">
+		<h3>
+			Whoops!<br/>
+			<span class="line2">There's nothing here!</span>
+		</h3>
+		<p>
+			The page you are looking for does not exist or has been deleted. Please <a href="/">return to the home page</a> or <a href="/company-contact">contact us</a> if you continue to experience trouble.
+		</p>
+	</sl:mainFrame>
+</spetml:page>

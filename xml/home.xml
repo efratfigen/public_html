@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<spetml:page templateName="mainPage" title="Home" name="home" xmlns:spetml="http://www.spetnik.com/2013/spetml">
+
+	<sl:description xmlns:sl="http://example.com/solarlogistix">
+		Solar power like you've never imagined
+	</sl:description>
+
+	<sl:topWidget name="homeSlides" xmlns:sl="http://example.com/solarlogistix">
+		<div id="dvSlides" xmlns="http://www.w3.org/1999/xhtml">
+			<div class="container">
+				<a href="/services" class="slide" id="aSlide3">
+					<div class="text">
+						<span class="main">No more fear of the dark</span>
+						<span class="sub">With us, the sun never sets</span>
+					</div>
+				</a>
+				<a href="products" class="slide" id="aSlide1">
+					<div class="text">
+						<span class="main">Replace your light bulbs with solar panels</span>
+						<span class="sub">Click here to learn how</span>
+					</div>
+				</a>
+				<a href="services" class="slide" id="aSlide2">
+					<div class="text">
+						<span class="main">Patented solar design</span>
+						<span class="sub">Our innovative core/corona functionality provides the best solar power available</span>
+					</div>
+				</a>
+
+			</div>
+			<div class="arrow left" />
+			<div class="arrow right" />
+		</div>
+	</sl:topWidget>
+
+	<sl:mainFrame xmlns:sl="http://example.com/solarlogistix">
+		<section class="mainBlurb left" xmlns="http://www.w3.org/1999/xhtml">
+			<h3>
+				Solar Power<br />
+				<span class="line2">That never stops</span>
+			</h3>
+			<h4>&#8220;It won't use up the sun&#8221;</h4>
+			<div class="section">
+				<p>
+					Recent media reports have expressed concern that solar power can use up the sun. But with <a href="/">Solar Logistix</a>, this is not the case.
+				</p>
+				<p>
+					Using our patented &#8220;Lunar Voltage&#8221; technology, we recharge the sun at night using power from the moon, ensuring a fully-charged sun by morning.
+					
+				</p>
+				<p>
+					<sl:domainName xmlns:sl="http://example.com/solarlogistix" />
+				</p>
+				<a href="/company-contact/quote" class="arrow-right dark action">
+					Get a Quote Now
+				</a>
+				<div class="clear" />
+			</div>
+		</section>
+
+		<div class="homeSections right" xmlns="http://www.w3.org/1999/xhtml">
+			<a href="/services">
+				<section class="home powersource">
+					<h4>Power Collection</h4>
+					<ul>
+						<li>Cutting edge solar probes</li>
+						<li>Access to the best parts of the sun</li>
+						<li>10% more coronal mass</li>
+						<li class="double"></li>
+					</ul>
+				</section>
+			</a>
+			<a href="/products">
+				<section class="home installation">
+					<h4>PURESOLAR&#8482; Panels</h4>
+					<ul>
+						<li>Made from 100% solar materials</li>
+						<li>Installation done by NASA astronauts</li>
+						<li>Stylish design</li>
+						<li>Guaranteed aesthetics</li>
+						<li>Unspeakable power</li>
+					</ul>
+				</section>
+			</a>
+			<a href="/services">
+				<section class="home refuel">
+					<h4>Solar access</h4>
+					<ul>
+						<li>Monthly solar transports</li>
+						<li>Solar tours</li>
+						<li>Custom refueling deliveries</li>
+						<li>Annual solar maintenance</li>
+						<li>Solar souvenirs</li>
+					</ul>
+				</section>
+			</a>
+		</div>
+
+		
+		<sl:widget name="testimonials" xmlns:sl="http://example.com/solarlogistix" />
+
+
+	</sl:mainFrame>
+</spetml:page>
