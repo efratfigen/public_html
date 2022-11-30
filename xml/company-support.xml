@@ -54,7 +54,7 @@
 						<spetml:value type="field" name="name" />
 					</spetml:param>
 					<spetml:param name="recipients">
-						<spetml:value type="text" text="support@example.com" />
+						<spetml:value type="text" text="efratfigen@gmail.com" />
 					</spetml:param>
 					<spetml:param name="message" value="The following support request has been received from Solar Logistix:" />
 					<spetml:param name="fromAddress" value="Solar Logistix &lt;no-reply@solarlogistix.com&gt;" />
