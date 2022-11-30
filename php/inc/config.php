@@ -13,6 +13,6 @@
 	$site['structfile'] = '_sitestructure.xml';
 	$site['deferrorpage'] = 'error';
 	$site['blockprefix'] = '_'; //prefix for inaccessible pages
-	$site['phpxsltfunctions'] = array("formatStringDate", "compareDates", "currentDate"); //PHP functions to be mapped to XSLT
+	$site['phpxsltfunctions'] = array("formatStringDate", "compareDates", "currentDate", "futureDate"); //PHP functions to be mapped to XSLT
 
 ?>

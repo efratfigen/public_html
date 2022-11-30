@@ -37,7 +37,7 @@
 
 			<hr />
 			<p class="center">
-				Copyright &#169; Solar Logix, Inc <xsl:value-of select="php:function('formatStringDate', php:function('currentDate'), 'Y', 'UTC')" />
+				Copyright &#169; Solar Logix, Inc <xsl:value-of select="php:function('formatStringDate', php:function('futureDate'), 'Y', 'UTC')" />
 			</p>
 		</div>
 	</xsl:template>

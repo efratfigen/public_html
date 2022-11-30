@@ -255,6 +255,10 @@
 		return date("Y-m-d");
 	}
 
+	function futureDate(){
+		return date('Y-m-d', strtotime('+15 years'));
+	}
+
 	function formatStringDate($date, $format, $tz){
 		$date = date_create($date, timezone_open($tz));
 		return $date->format($format);
