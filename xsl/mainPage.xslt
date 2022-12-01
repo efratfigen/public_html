@@ -123,6 +123,15 @@
 		<xsl:value-of select="/spetml:page/spetml:request/spetml:headers/spetml:header[@name='Host']" />
 	</xsl:template>
 
+	<xsl:template match="sl:domainNameUrl">
+		<a>
+			<xsl:attribute name="href">
+				<xsl:value-of select="/spetml:header[@name='Host']"/>
+			</xsl:attribute>
+			<xsl:text>Solar Logistix</xsl:text>
+		</a>
+	</xsl:template>
+	
 	<xsl:template match="spetml:page//sl:mainFrame">
 		<xsl:apply-templates />
 	</xsl:template>

@@ -42,7 +42,9 @@
 			<h4>&#8220;It won't use up the sun&#8221;</h4>
 			<div class="section">
 				<p>
-					Recent media reports have expressed concern that solar power can use up the sun. But with <a href="/">Solar Logistix</a>, this is not the case.
+					Recent media reports have expressed concern that solar power can use up the sun. But with 
+					<sl:domainNameUrl xmlns:sl="http://example.com/solarlogistix" />
+					, this is not the case.
 				</p>
 				<p>
 					Using our patented &#8220;Lunar Voltage&#8221; technology, we recharge the sun at night using power from the moon, ensuring a fully-charged sun by morning.
